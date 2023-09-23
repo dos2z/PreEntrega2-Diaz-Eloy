@@ -1,0 +1,25 @@
+
+
+.portada {
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    padding: 5px;
+    background: linear-gradient(to right, #ffffff 15%, #ffffff8e 50%, #ffffff00), url(../assets/img/tres-riccios.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin: 50px;
+    
+
+}
+
+.description {
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+    
+}

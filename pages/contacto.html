@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <!--
+        Fuentes
+    -->
+    <!--Nav-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <!--Encabezados-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <!--Texto-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <title>Cofradía - copia</title>
+</head>
+
+<body>
+    <header class="px-4">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="logo navbar-brand" href="../index.html"><img src="../assets/img/logo-cofradia-removebg.png"
+                        alt="Logo Cofradia" width="200px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link text-black" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-black" href="./orquesta.html">La Orquesta</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-black" href="./actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-black" href="./cronograma.html">Cronograma</a>
+                        </li>
+                        <li class="nav-item"><a class="activo nav-link text-secondary" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+
+        <!--Formulario-->
+
+        <form action="" class="form" method="post">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="datoscontacto" required>
+
+            <input type="email" id="email" name="email" placeholder="Correo electrónico" class="datoscontacto" required>
+
+            <input type="number" id="edad" name="edad" min="4" max="99" placeholder="Edad" class="datoscontacto">
+
+            <div class="form__div-checkbox">
+                <h3>¿Qué instrumento te interesa aprender?</h3>
+
+                <div class="form__checkbox__div">
+                    <input type="checkbox" id="violin" name="instrumento" value="violin"> <label
+                        for="violin">Violin</label>
+                </div>
+
+                <div class="form__checkbox__div">
+                    <input type="checkbox" id="viola" name="instrumento" value="viola"> <label for="viola">Viola</label>
+                </div>
+
+                <div class="form__checkbox__div">
+                    <input type="checkbox" id="violoncello" name="instrumento" value="violoncello"> <label
+                        for="violoncello">Violoncello</label>
+                </div>
+
+                <div class="form__checkbox__div">
+                    <input type="checkbox" id="contrabajo" name="instrumento" value="contrabajo"> <label
+                        for="contrabajo">Contrabajo</label>
+                </div>
+
+                <div class="form__checkbox__div">
+                    <input type="checkbox" id="piano" name="instrumento" value="piano"> <label for="piano">Piano</label>
+                </div>
+
+            </div>
+
+
+            <label for="mensaje" class="mensaje">Mensaje</label> <textarea id="mensaje" name="mensaje"></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <!--Footer-->
+    <div class="container-flex">
+        <footer class="py-3 my-4 bg-secondary">
+
+            <p class="text-center ">Desde 1995</p>
+
+            <ul class="footer__ul nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a class="nav-link px-2 text-body-secondary"
+                        href="https://instagram.com/orquesta_cofradia?igshid=MzRlODBiNWFlZA==" target="_blank"><img
+                            src="../assets/icons/bxl-instagram.svg"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 text-body-secondary"
+                        href="https://www.facebook.com/profile.php?id=100063644704595" target="_blank"><img
+                            src="../assets/icons/bxl-facebook-circle.svg"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 text-body-secondary"
+                        href="https://www.youtube.com/@fundacioncofradiafundacion9782" target="_blank"><img
+                            src="../assets/icons/bxl-youtube.svg"></a>
+                </li>
+            </ul>
+
+            <p class="text-center ">Bariloche, Río Negro</p>
+
+        </footer>
+    </div>
+
+
+    <!--Scripts-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

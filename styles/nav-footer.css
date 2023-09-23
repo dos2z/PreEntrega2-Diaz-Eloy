@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+}
+
+header {
+   
+    width: 100%;
+    
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: end;
+    flex-wrap: wrap;
+    /* border-bottom: 1px solid #989898; */
+
+
+}
+
+/* Navegador */
+
+.nav_ul li {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-variant: all-small-caps;
+    font-size: 1.2em;
+    float: left;
+    list-style: none;
+    margin: 2em;
+
+}
+
+.nav_ul li a:hover {
+    color: #000;
+    text-shadow: 1px 1px 10px #212121;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+
+
+
+
