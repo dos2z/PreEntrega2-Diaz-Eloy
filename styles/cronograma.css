@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+}
+
+
+.nav__ul li a:hover {
+    color: #000;
+    text-shadow: 1px 1px 10px #212121;
+}
+
+.activo {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 980px) {
+
+
+    body{
+        background: linear-gradient(to right, #ffffff 30%, #ffffff00), url(../assets/img/tres-riccios.jpg);
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: top;
+   }
+    
+}
+
+@media screen and (max-width: 979px) {
+
+    .portada {
+       
+        background: linear-gradient(to right, #ffffff 30%, #ffffff00), url(../assets/img/tres-riccios.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        
+    
+    }
+    
+}
+
+
+
+
+
+.evento {
+    padding: 10px;
+    border: solid;
+    
+}

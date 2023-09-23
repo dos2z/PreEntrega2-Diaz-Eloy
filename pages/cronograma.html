@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!--mis estilos-->
     <link rel="stylesheet" href="../styles/cronograma.css">
-  
+
     <!--Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,32 +28,30 @@
 
 
     <title>Cronograma</title>
-    
-     <!--favicon-->
-     <link rel="icon" type="image/x-icon" sizes="32x32" href="../assets/icons/favicon_package_v0.16/favicon.ico">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="../assets/icons/favicon_package_v0.16/favicon.ico">
 
 </head>
 
 <body>
-    <header class="px-4">
-        <nav class="navbar navbar-expand-md">
+    <header class="px-4 border-bottom">
+        <nav class="nav navbar navbar-expand-md">
             <div class="container-fluid">
-                <a class="logo navbar-brand" href="../index.html"><img src="../assets/img/logo-cofradia-removebg.png" alt="Logo Cofradia"
-                        width="200px"></a>
+                <a class="logo navbar-brand" href="../index.html"><img src="../assets/img/logo-cofradia-removebg.png"
+                        alt="Logo Cofradia" width="200px"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <ul class="nav__ul navbar-nav ms-auto mb-2 mb-md-0">
                         <li class="nav-item"><a class="nav-link text-black" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link text-black" href="./orquesta.html">La Orquesta</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link text-black"
-                                href="./actividades.html">Actividades</a>
+                        <li class="nav-item"><a class="nav-link text-black" href="./actividades.html">Actividades</a>
                         </li>
-                        <li class="nav-item"><a class="activo nav-link text-secondary"
-                                href="#">Cronograma</a>
+                        <li class="nav-item"><a class="activo nav-link text-secondary" href="#">Cronograma</a>
                         </li>
                         <li class="nav-item"><a class="nav-link text-black" href="./contacto.html">Contacto</a>
                         </li>
@@ -63,52 +61,77 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container-fluid">
 
-        <h1 class="">Cronograma</h1>
+        <div class="portada">
+            <h1 class="text-center">Cronograma</h1>
+            
+        </div>
 
-        <section class="cronograma container">
-            <div class="row">
-                <div class="col-xl-8 col-md-6 col-sm-12 evento">
-                    <h2>Evento 1</h2>
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore illum distinctio eum tempora,
-                        eos doloremque voluptatibus nemo exercitationem, ab quasi quaerat. Ducimus, ab perferendis pariatur
-                        temporibus dicta sapiente? Neque.</p>
-                    <p>Fecha - Hora - Lugar</p>
-                </div>
-    
-                <div class="col-xl-4 col-md-6 col-sm-12 evento">
-                    <h2>Evento 2</h2>
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore illum distinctio eum tempora,
-                        eos doloremque voluptatibus nemo exercitationem, ab quasi quaerat. Ducimus, ab perferendis pariatur
-                        temporibus dicta sapiente? Neque.</p>
-                    <p>Fecha - Hora - Lugar</p>
-                </div>
-            </div>
-           
+        <section class="cronograma grid gap-20">
 
             <div class="row">
-                <div class="col-xl-8 col-md-6 col-sm-12 evento">
+                <div class="evento col-12">
                     <h2>Evento 1</h2>
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore illum distinctio eum tempora,
-                        eos doloremque voluptatibus nemo exercitationem, ab quasi quaerat. Ducimus, ab perferendis pariatur
-                        temporibus dicta sapiente? Neque.</p>
-                    <p>Fecha - Hora - Lugar</p>
-                </div>
-    
-                <div class="col-xl-4 col-md-6 col-sm-12 evento">
-                    <h2>Evento 2</h2>
-                    <h3>Descripción</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore illum distinctio eum tempora,
-                        eos doloremque voluptatibus nemo exercitationem, ab quasi quaerat. Ducimus, ab perferendis pariatur
-                        temporibus dicta sapiente? Neque.</p>
-                    <p>Fecha - Hora - Lugar</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut iure doloremque adipisci
+                        perspiciatis quae dicta eum ipsam eos, rerum minus sit iusto sed ipsum blanditiis numquam,
+                        molestias magni? Optio, libero!</p>
+                    <img src="../assets/img/eventos/ejmc-dic-2022.jpg" class="img-fluid" alt="evento próximo">
                 </div>
             </div>
-           
+
+            <div class="row">
+                <div class="evento col-xl-8 col-md-6 col-sm-12  flex align-center">
+                    <h3>Evento 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore illum distinctio eum
+                        tempora,
+                        eos doloremque voluptatibus nemo exercitationem, ab quasi quaerat. Ducimus, ab perferendis
+                        pariatur
+                        temporibus dicta sapiente? Neque.</p>
+                    <p>Fecha - Hora - Lugar</p>
+                    <img src="../assets/img/eventos/sabdao-3-dic-ejmc.jpg" class="img-fluid" alt="afiche">
+                </div>
+
+                <div class="evento col-xl-4 col-md-6 col-sm-12 flex align-center">
+                    <h3>Evento 2</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore illum distinctio eum
+                        tempora,
+                        eos doloremque voluptatibus nemo exercitationem, ab quasi quaerat. Ducimus, ab perferendis
+                        pariatur
+                        temporibus dicta sapiente? Neque.</p>
+                    <p>Fecha - Hora - Lugar</p>
+                    <img src="../assets/img/eventos/18-01-2020.jpg" class="img-fluid" alt="afiche">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="evento col-xl-8 col-md-6 col-sm-12 ">
+                    <h3>Evento 1</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore illum distinctio eum
+                        tempora,
+                        eos doloremque voluptatibus nemo exercitationem, ab quasi quaerat. Ducimus, ab perferendis
+                        pariatur
+                        temporibus dicta sapiente? Neque.</p>
+                    <p>Fecha - Hora - Lugar</p>
+                    <img src="../assets/img/eventos/concierto-final-cofradia2017.jpg" class="img-fluid" alt="afiche">
+                </div>
+
+                <div class="evento col-xl-4 col-md-6 col-sm-12 flex align-items-center">
+                    <h3>Evento 2</h3>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius inventore illum distinctio eum
+                        tempora,
+                        eos doloremque voluptatibus nemo exercitationem, ab quasi quaerat. Ducimus, ab perferendis
+                        pariatur
+                        temporibus dicta sapiente? Neque.</p>
+                    <p>Fecha - Hora - Lugar</p>
+                    <img src="../assets/img/eventos/20-16-2016.jpg" class="img-fluid" alt="afiche">
+                </div>
+            </div>
+        </section>
 
     </main>
 
