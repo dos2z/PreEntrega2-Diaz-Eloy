@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*fuentes*/
+
 h1,
 h2,
 h3 {
@@ -15,6 +17,12 @@ p {
 }
 
 
+/*navegador*/
+
+.nav__ul li{
+    margin-left: 5px;
+}
+
 .nav__ul li a:hover {
     color: #000;
     text-shadow: 1px 1px 10px #212121;
@@ -23,6 +31,8 @@ p {
 .activo {
     text-decoration: underline;
 }
+
+/* contenido */
 
 @media screen and (min-width: 980px) {
 

@@ -1,3 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*fuentes*/
+
+h1,
+h2,
+h3 {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+}
+
+
+/*navegador*/
 
 .nav__ul li{
     margin-left: 5px;
@@ -7,6 +27,12 @@
     color: #000;
     text-shadow: 1px 1px 10px #212121;
 }
+
+.activo {
+    text-decoration: underline;
+}
+
+/* contenido */
 
 @media screen and (min-width: 980px) {
 

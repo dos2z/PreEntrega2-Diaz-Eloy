@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/*
+color 1 -> #fff0d9
+color 2 -> #d9e8ff 
+*/
+
+/*fuentes*/
+
 h1,
 h2,
 h3 {
@@ -15,6 +22,12 @@ p {
 }
 
 
+/*navegador*/
+
+.nav__ul li{
+    margin-left: 5px;
+}
+
 .nav__ul li a:hover {
     color: #000;
     text-shadow: 1px 1px 10px #212121;
@@ -22,6 +35,14 @@ p {
 
 .activo {
     text-decoration: underline;
+}
+
+/*body*/
+
+.portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 980px) {
@@ -33,14 +54,17 @@ p {
         background-repeat: repeat;
         background-position: top;
    }
-    
+   .portada {
+    height: 300px;
+   
+}
 }
 
 @media screen and (max-width: 979px) {
 
     .portada {
-       
-        background: linear-gradient(to right, #ffffff 30%, #ffffff00), url(../assets/img/tres-riccios.jpg);
+        height: 200px;
+        background:  url(../assets/img/tres-riccios.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right;
@@ -50,12 +74,27 @@ p {
     
 }
 
+h1 {
+    text-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff; 
+}
 
-
-
+h2, h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
 
 .evento {
-    padding: 10px;
-    border: solid;
+    display: flex;
+    flex-direction: column;  
+    padding: 50px;
+    background: linear-gradient(#fff0d9eb, #ffffff3a);
+   
+}
+.evento div {
+    margin-bottom: 20px;
     
+}
+
+img {
+    border-radius: 10px;
 }
