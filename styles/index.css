@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/*
+color 1 -> #fff0d9
+color 2 -> #d9e8ff 
+color 3? -> #FFA317
+color 3? -> #9D1B27
+*/
+
 /*fuentes*/
 
 h1,
@@ -50,7 +57,7 @@ p {
 
     .portada {
        
-        background: linear-gradient(to right, #ffffff 30%, #ffffff00), url(../assets/img/tres-riccios.jpg);
+        background: linear-gradient(to right, #ffffffe2 30%, #ffffff00), url(../assets/img/tres-riccios.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: right;
@@ -60,236 +67,133 @@ p {
     
 }
 
+@media screen and (min-width: 576px) {
 
-.portada {
-    width: 100%;
-    min-height: 500px;
-    margin: 0 auto;
-    padding: 5px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    font-weight: 600;
-
-}
-
-h1 {
-    margin: 100px 20px 50px;
-    font-size: 2rem;
-    line-height: 1em;
-
-}
-
-.portada p {
-    margin-top: 1em;
-    text-indent: 1.5em;
-    font-size: 1.5rem;
-}
-.portada_p-b {
-    margin-bottom: 5em;
-    text-indent: 5em;
+    .portada {
+        width: 100%;
+        min-height: 500px;
+        margin: 0 auto;
+        padding: 5px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        font-weight: 600;
+        text-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff; 
     
-}
-
-.portada-texto {
-    width: 50%;
-    min-width: 400px;
-    margin: 10px 10px 60px 70px;
-    padding-left: 20px;
-    text-align: left;
-    line-height: 1.5em;
-    color: #1e1e1e;
-}
-
-
-/* Instrumentos */
-
-.clasesmusica li {
-    margin: 10px;
-}
-
-
-.clasesmusica_descripcion {
-   
-    margin: auto;
-    padding: 5em;
-    background: linear-gradient(to bottom, #fff0d9e9, #faefe6 25%, #ffffff00);
-    color: #1e1e1e;
+    }
     
-}
-
-.clasesmusica_descripcion h2 {
-    font-size: 2em;
-}
-
-.clasesmusica_descripcion__div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    h1 {
+        margin: 100px 20px 50px;
+        font-size: 2rem;
+        line-height: 1em;
+        
+    }
     
-}
-
-.clasesmusica_descripcion-texto {
-    width: 50%;
-    min-width: 400px
-}
-
-.clasesmusica-texto {
-    margin-top: 2em;
-    font-size: 1.5em;
-}
-
-.clasesmusica-texto a {
-    border-radius: 10px;
-    color: #faefe6;
-    background-color: #0054ba;
-    padding: 5px;
-}
-
-.clasesmusica__p {
-    width: 85%;
-    margin: 2em;
-    font-size: 1.5em;
-}
-
-
-.clasesmusica__img {
-    float: right;
-    width: 500px;
-    margin: 0;
-}
-.clasesmusica__img img {
-    width: 100%;
-}
-
-.instrumento a {
-    color: #1e1e1e;
-    font-weight: 500;
-}
-
-.clasesmusica_descripcion ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-left: 2em;
-    font-size: 1.5em;
-}
-
-
-
-
-
-.instrument_button_conjunto {
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    width: 90%;
-    height: 200px;
-    margin: 10px auto;
-    flex-wrap: wrap;
+    .portada p {
+        margin-top: 1em;
+        font-size: 1.5rem;  
+        
+    }
     
-}
-
-.instrumento {
-    height: 200px;
-    margin: 10px;
-    font-size: 1.5em;
-       
-}
-
-.instrument_button_nombre {
-    text-align: center;
-
-}
-
-.instrumento-tarjeta {
-    margin: 20px auto;
-    width: 70%;
-    height: auto;
-    min-height: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px #636363, -5px -5px 20px 5px #000;
+    .portada-texto {
+        width: 50%;
+        min-width: 400px;
+        margin: 10px 10px 60px 70px;
+        padding-left: 1.25rem;
+        text-align: left;
+        line-height: 1.5em;
+        color: #1e1e1e;
+    }
     
     
-}
-
-.violin {
-    background: linear-gradient(to right, #ffffff 30%, #f7bebe8b), url(../assets/img/voluta-apoyo-blanco.png) no-repeat right;
-}
-
-
-.viola {
-    background: linear-gradient(to right, #fafafa 30%, #f7bebe8b), url(../assets/img/violinyviola.jpg)  right;
-}
-
-
-.violoncello {
-    background: linear-gradient(to right, #ffffff 30%, #f7bebe8b), url(../assets/img/un-violoncello-1000x666.jpg) no-repeat right;
-}
-
-
-.contrabajo {
-    background: linear-gradient(to right, #ffffff 30%, #f7bebe42), url(../assets/img/contrabajo-señor2.png) no-repeat right;
-}
-
-
-.piano {
-    background: linear-gradient(to right, #000000 30%, #f7bebe8b), url(../assets/img/piano-camping.jpg) no-repeat right;
-    color: #fff;
-}
-
-
-
-
-
-
-
-
-
-
-.italic {
-    font-style: italic;
-}
-
-
-
-
-
-.abajo {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    background-color: #000;
-
-
-}
-
-.boton_la-orquesta {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 50px;
-    margin: auto;
-    width: 300px;
-    border-radius: 5px;
-    background-color: #2e4eeccc;
-    text-align: center;
-    padding: 5px;
-}
-
-.boton_la-orquesta a {
-    text-decoration: none;
-    color: #fff9f4;
-    font-size: 3em;
-}
-
-.abajo img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-
+    /* secciones */
+    
+    
+    .section__div {
+        width: 100%;
+        margin: auto;
+        background: linear-gradient(to bottom, #fff0d9e9, #faefe6 25%, #ffffff00);
+        color: #1e1e1e;
+        
+    }
+    
+    .section__div h2 {
+        font-size: 2em;
+    }
+    
+    .descripcion {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+    
+    .descripcion-texto {
+        width: 50%;
+        min-width: 400px
+    }
+    
+    .descripcion-texto p {
+        margin-top: 2em;
+        font-size: 1.5em;
+    }
+    
+    .clasesmusica-texto a {
+        border-radius: 10px;
+        color: #faefe6;
+        background-color: #0054ba;
+        padding: 5px;
+    }
+    
+    
+    .descripcion-img {
+        float: right;
+        width: 500px;
+        margin: 0;
+    }
+    .descripcion-img img {
+        width: 100%;
+    }
+    
+    .italic {
+        font-style: italic;
+    }
+    
+    .abajo {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        background-color: #000;
+    
+    
+    }
+    
+    .boton_la-orquesta {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        margin: auto;
+        width: 300px;
+        border-radius: 5px;
+        background-color: #2e4eeccc;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .boton_la-orquesta a {
+        text-decoration: none;
+        color: #fff9f4;
+        font-size: 3em;
+    }
+    
+    .abajo img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    
+    }
+    
 }

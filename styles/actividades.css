@@ -1,0 +1,64 @@
+
+
+.portada {
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    padding: 5px;
+    background: linear-gradient(to right, #ffffff 15%, #ffffff8e 50%, #ffffff00), url(../assets/img/tres-riccios.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin: 50px;
+    
+
+}
+
+.description {
+    width: 50%;
+    margin: 10px;
+    text-align: left;
+    
+}
+
+/*estilos del carousel*/
+
+.instrumento-tarjeta {
+    margin: 20px auto;
+    width: 70%;
+    height: auto;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #636363, -5px -5px 20px 5px #000;
+    
+    
+}
+
+.violin {
+    background: linear-gradient(to right, #ffffff 30%, #f7bebe8b), url(../assets/img/voluta-apoyo-blanco.png) no-repeat right;
+}
+
+
+.viola {
+    background: linear-gradient(to right, #fafafa 30%, #f7bebe8b), url(../assets/img/violinyviola.jpg)  right;
+}
+
+
+.violoncello {
+    background: linear-gradient(to right, #ffffff 30%, #f7bebe8b), url(../assets/img/un-violoncello-1000x666.jpg) no-repeat right;
+}
+
+
+.contrabajo {
+    background: linear-gradient(to right, #ffffff 30%, #f7bebe42), url(../assets/img/contrabajo-señor2.png) no-repeat right;
+}
+
+
+.piano {
+    background: linear-gradient(to right, #000000 30%, #f7bebe8b), url(../assets/img/piano-camping.jpg) no-repeat right;
+    color: #fff;
+}
