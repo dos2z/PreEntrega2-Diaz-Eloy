@@ -41,7 +41,6 @@ p {
 
 .portada {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -54,11 +53,15 @@ p {
         background-repeat: repeat;
         background-position: top;
    }
+
    .portada {
     height: 300px;
-   
+    justify-content: center;
+   }
+
+  
 }
-}
+
 
 @media screen and (max-width: 979px) {
 
@@ -88,6 +91,7 @@ h2, h3 {
     flex-direction: column;  
     padding: 50px;
     background: linear-gradient(#fff0d9eb, #ffffff3a);
+    border: double 5px #dabb8d;
    
 }
 .evento div {
