@@ -20,6 +20,29 @@ h3 {
 }
 
 
+/*navegador*/
+
+.nav__ul li{
+    margin-left: 5px;
+}
+
+.nav__ul li a:hover {
+    color: #000;
+    text-shadow: 1px 1px 10px #212121;
+}
+
+.activo {
+    text-decoration: underline;
+}
+
+/*body*/
+
+
+h1 {
+    font-weight: 700;
+}
+
+
 body {
    
     background-image: url(../assets/img/tres-riccios.jpg);

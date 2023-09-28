@@ -39,6 +39,10 @@ p {
 
 /*body*/
 
+h1 {
+    font-weight: 700;
+}
+
 .portada {
     display: flex;
     align-items: center;
