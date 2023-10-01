@@ -22,6 +22,12 @@ h3 {
 
 /*navegador*/
 
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
 .nav__ul li{
     margin-left: 5px;
 }
