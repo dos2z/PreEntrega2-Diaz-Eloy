@@ -133,6 +133,10 @@ p.italic {
         background-position: top;
     }
 
+    .portada {
+        background: linear-gradient(to right, #ffffffe2 30%, #ffffff00);
+    }
+
 }
 
 

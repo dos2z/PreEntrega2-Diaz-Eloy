@@ -22,6 +22,11 @@ p {
 }
 
 
+h1 {
+    font-weight: 700;
+}
+
+
 /*navegador*/
 
 .nav__ul li{
@@ -35,6 +40,30 @@ p {
 
 .activo {
     text-decoration: underline;
+}
+
+/*navegador-secundario*/
+
+
+.second-nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff0d9;
+    z-index: 10;
+}
+
+.second-nav ul {
+    display: flex;
+    }
+
+.second-nav ul li {
+    padding: 10px ;
+    margin-left: 50px;
+}
+
+.second-nav ul li a{
+    text-decoration: none;
+    color: #212121;
 }
 
 /*body*/
