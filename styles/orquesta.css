@@ -30,6 +30,10 @@ header {
     background-color: #fff;
 }
 
+.logo img {
+    width: 200px;
+}
+
 .nav__ul li {
     margin-left: 5px;
     
@@ -43,6 +47,10 @@ header {
 
 .activo {
     text-decoration: underline;
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 /* contenido */

@@ -32,6 +32,10 @@ header {
     background-color: #fff;
 }
 
+.logo img {
+    width: 200px;
+}
+
 .nav__ul li {
     margin-left: 5px;
 }
@@ -44,6 +48,11 @@ header {
 .activo {
     text-decoration: underline;
 }
+
+.navbar-toggler {
+    border: none;
+}
+
 
 /* contenido */
 
@@ -206,7 +215,7 @@ p.italic {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-
+        align-items: center;
     }
 
     .descripcion-texto {
@@ -221,7 +230,6 @@ p.italic {
 
     
     .descripcion-img {
-        float: right;
         width: 500px;
         margin: 20px;
     }
