@@ -1,0 +1,180 @@
+/*Variables*/
+/*Componentes*/
+/*Header*/
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+header nav div a img {
+  width: 200px;
+}
+header nav div button {
+  border: none;
+}
+header nav div div ul li {
+  margin-left: 5px;
+}
+header nav div div ul li a.activo {
+  text-decoration: underline;
+}
+header nav div div ul li a:hover {
+  color: #000;
+  text-shadow: 1px 1px 10px #212121;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+p {
+  font-family: "Arimo", sans-serif;
+  color: #1e1e1e;
+}
+
+/* contenido */
+/* Movile */
+.portada {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8862745098) 30%, rgba(255, 255, 255, 0)), url(../assets/img/tres-riccios.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 2rem;
+  text-shadow: 2px 4px 10px #fff, -2px -4px 10px #fff;
+}
+.portada h1 {
+  font-weight: 700;
+}
+.portada p {
+  width: 75%;
+  margin-top: 1em;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/*Solo el INDEX */
+.section__div {
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #fff0d9, #faefe6 25%, rgba(255, 255, 255, 0));
+  color: #1e1e1e;
+}
+.section__div div.descripcion div.descripcion-texto p.italic {
+  padding: 10px;
+  background-color: rgba(255, 233, 216, 0.9019607843);
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: 500;
+}
+.section__div div.descripcion div.descripcion-texto a {
+  color: #1e1e1e;
+  font-style: italic;
+  font-weight: 500;
+}
+.section__div div.descripcion div.descripcion-texto a.focus {
+  color: #0054ba;
+}
+
+.abajo {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  background-color: #000;
+}
+.abajo div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  margin: auto;
+  width: 300px;
+  border-radius: 5px;
+  background-color: rgba(46, 78, 236, 0.8);
+  text-align: center;
+  padding: 5px;
+}
+.abajo div a {
+  text-decoration: none;
+  color: #fff9f4;
+  font-size: 3em;
+}
+
+/*Pantallas a partir de 576px*/
+@media screen and (min-width: 980px) {
+  body {
+    background: linear-gradient(to right, #ffffff 30%, rgba(255, 255, 255, 0)), url(../assets/img/tres-riccios.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .portada {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8862745098) 30%, rgba(255, 255, 255, 0));
+  }
+}
+@media screen and (min-width: 576px) {
+  .portada {
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-weight: 600;
+  }
+  .portada div {
+    width: 50%;
+    min-width: 400px;
+    margin: 10px 10px 60px 70px;
+    padding-left: 1.25rem;
+    text-align: left;
+    line-height: 1.5em;
+    color: #1e1e1e;
+  }
+  .portada div h1 {
+    margin: 100px 20px 50px;
+    font-size: 2rem;
+    line-height: 1em;
+  }
+  .portada div p {
+    margin-top: 1em;
+    font-size: 1.5rem;
+  }
+  /* secciones */
+  .section__div {
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(to bottom, #fff0d9, #faefe6 25%, rgba(255, 255, 255, 0));
+    color: #1e1e1e;
+  }
+  .section__div h2 {
+    font-size: 2em;
+  }
+  .section__div div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .section__div div div.descripcion-texto {
+    width: 50%;
+    min-width: 600px;
+  }
+  .section__div div div.descripcion-texto p {
+    margin-top: 2em;
+    font-size: 1.5em;
+  }
+  .section__div div div.descripcion-img {
+    width: 500px;
+    margin: 20px;
+  }
+  .section__div div div.descripcion-img img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
