@@ -77,12 +77,12 @@ header {
 
 .portada {
 
-    background: linear-gradient(to right, #ffffffe2 30%, #ffffff00), url(../assets/img/tres-riccios.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    padding: 32px;
-    text-shadow: 2px 4px 10px #fff, -2px -4px 10px #fff;
+        background: linear-gradient(to right, #ffffffe2 30%, #ffffff00), url(../assets/img/tres-riccios.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 32px;
+        text-shadow: 2px 4px 10px #fff, -2px -4px 10px #fff;
 }
 
 

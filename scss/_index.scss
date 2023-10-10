@@ -1,0 +1,168 @@
+
+
+
+/* contenido */
+
+
+/* Movile */
+
+.index__portada {
+    @include portada;
+
+    /*Solo el INDEX */
+    p {
+        width: 75%;
+        margin-top: 1em;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+/*INDEX */
+
+.section__div {
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to bottom, $color-principal, $color-intermedio 25%, $color-transparente);
+    color: $color-texto;
+
+
+    div.descripcion {
+
+        div.descripcion-texto {
+
+            p.italic {
+                padding: 10px;
+                background-color: $color-principal-dos;
+                border-radius: 10px;
+                font-style: italic;
+                font-weight: 500;
+            }
+
+            a {
+                color: $color-texto;
+                font-style: italic;
+                font-weight: 500;
+            }
+
+            a.focus {
+                    color: $color-focus;
+            }   
+        }
+
+        div.descripcion-img {
+            margin: 20px;
+        }
+    }
+}
+
+
+.abajo {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background-color: $color-negro;
+
+    div {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        margin: auto;
+        width: 300px;
+        border-radius: 5px;
+        background-color: $color-complementario-tr;
+        text-align: center;
+        padding: 5px;
+
+        a {
+            text-decoration: none;
+            color: $color-blanco;
+            font-size: 3em;
+        }
+    }
+}
+
+
+
+
+/*Pantallas a partir de 576px*/
+
+@media screen and (min-width: 980px) {
+
+
+    body {
+        background: linear-gradient(to right, $color-blanco 30%, $color-transparente), url(../assets/img/tres-riccios.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .index__portada {
+        background: linear-gradient(to right, #ffffffe2 30%, $color-transparente);
+    }
+}
+
+
+
+@media screen and (min-width: 576px) {
+
+    .index__portada {
+        width: 100%;
+        min-height: 500px;
+        margin: 0 auto;
+        padding: 5px;
+        font-weight: 600;
+
+        div {
+            width: 50%;
+            min-width: 400px;
+            margin: 10px 10px 60px 70px;
+            padding-left: 1.25rem;
+            text-align: left;
+            line-height: 1.5em;
+            color: $color-texto;
+
+            p {
+                margin-top: 1em;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+    /* secciones */
+
+
+    .section__div {
+
+        h2 {
+            font-size: 2em;
+        }
+
+        div{
+            @include flex ($justify-content: space-evenly);
+
+            div.descripcion-texto {
+                width: 50%;
+                min-width: 600px;
+
+                    p {
+                    margin-top: 2em;
+                    margin-left: 1em;
+                    margin-right: 1em;
+                    font-size: 1.5em;
+                }
+            }
+
+            div.descripcion-img {
+                width: 500px;
+                margin: 20px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    } 
+}

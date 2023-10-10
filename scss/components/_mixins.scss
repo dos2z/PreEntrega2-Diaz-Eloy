@@ -1,0 +1,27 @@
+@mixin portada {
+    background: linear-gradient(to right, #ffffffe2 30%, $color-transparente), url(../assets/img/tres-riccios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 2rem;
+    text-shadow: 2px 4px 10px #fff, -2px -4px 10px #fff;
+
+    h1 {
+        font-weight: 700;
+        margin: 100px 20px 50px;
+        font-size: 2rem;
+        line-height: 1em;
+    }
+}
+
+@mixin flex ($flex-direction : row,
+    $flex-wrap : wrap,
+    $justify-content : center,
+    $align-items: center) {
+
+    display: flex;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
