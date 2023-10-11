@@ -20,7 +20,7 @@ header nav div div ul li a.activo {
 }
 header nav div div ul li a:hover {
   color: #000;
-  text-shadow: 1px 1px 10px #212121;
+  text-shadow: 1px 1px 10px #0054ba;
 }
 
 /* contenido */
@@ -160,97 +160,6 @@ header nav div div ul li a:hover {
     width: 100%;
   }
 }
-/*body*/
-.contacto__body {
-  background-image: url(../assets/img/tres-riccios.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-}
-.contacto__body h1 {
-  font-weight: 700;
-}
-
-@media screen and (min-width: 620px) {
-  .contacto__body {
-    background-image: url(../assets/img/tres-riccios.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-  }
-  .contacto__body h1 {
-    text-align: center;
-    text-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff;
-  }
-}
-form {
-  margin: 25px auto;
-  width: 90%;
-  max-width: 500px;
-  padding: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.4666666667);
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8666666667);
-  font-family: "Arimo", sans-serif;
-}
-form input ::placeholder {
-  color: #5e5e5e;
-  font-style: italic;
-}
-form input.datoscontacto {
-  padding: 10px;
-  font-weight: 600;
-  margin: 1em;
-  display: block;
-  width: auto;
-}
-form div.form__div-checkbox {
-  margin: 1em;
-  padding: 1em;
-}
-form div.form__div-checkbox h2 {
-  margin-bottom: 1em;
-}
-form div.form__div-checkbox input {
-  margin: 0.5em;
-}
-form label.mensaje {
-  margin-left: 1em;
-  font-weight: 600;
-}
-form textarea {
-  padding: 10px;
-  font-weight: 600;
-  margin: 1em;
-  margin-top: 0;
-  display: block;
-  width: 95%;
-  height: 6em;
-}
-form input[type=submit] {
-  padding: 10px;
-  font-weight: 600;
-  border-radius: 10px;
-  background-color: #0054ba;
-  color: #fff;
-}
-
-.contacto_ul {
-  display: inline-block;
-  background-color: #fff0d9;
-  padding: 20px;
-  border-radius: 0 10px 10px 0;
-  box-shadow: 4px 4px 10px #000;
-}
-.contacto_ul li {
-  list-style: none;
-  margin: 10px;
-}
-.contacto_ul a {
-  text-decoration: none;
-  color: #000;
-}
-
 .orquesta__portada {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.8862745098) 30%, rgba(255, 255, 255, 0)), url(../assets/img/tres-riccios.jpg);
   background-size: cover;
@@ -353,16 +262,9 @@ form input[type=submit] {
     margin: 2em;
   }
 }
-.actividades__header {
-  position: relative;
-}
-
 .second-nav {
-  position: sticky;
-  top: 0;
   background: linear-gradient(to right, #fff 50%, rgba(255, 255, 255, 0));
   z-index: 10;
-  box-shadow: 0 2px 10px #000;
 }
 .second-nav ul {
   list-style: none;
@@ -375,6 +277,10 @@ form input[type=submit] {
   text-decoration: none;
   color: #1e1e1e;
   font-weight: 600;
+  transition: text-decoration 1s;
+}
+.second-nav ul li a:hover {
+  text-decoration: underline;
 }
 
 /*body*/
@@ -461,6 +367,10 @@ form input[type=submit] {
     padding: 5px;
     font-weight: 600;
   }
+  body main .second-nav {
+    position: sticky;
+    top: 161.41px;
+  }
   body main .second-nav ul {
     display: flex;
   }
@@ -471,6 +381,148 @@ form input[type=submit] {
     font-size: 1.2rem;
   }
 }
+.portada_cronograma {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background: url(../assets/img/tres-riccios.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.portada_cronograma h1 {
+  font-weight: 700;
+  text-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff;
+}
+
+.evento {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background: linear-gradient(rgba(255, 240, 217, 0.9215686275), rgba(255, 255, 255, 0.2274509804));
+  border: double 5px #dabb8d;
+}
+.evento div {
+  margin-bottom: 20px;
+}
+.evento div h2, .evento div h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.evento img {
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 980px) {
+  body {
+    background: linear-gradient(to right, #ffffff 30%, rgba(255, 255, 255, 0)), url(../assets/img/tres-riccios.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: top;
+  }
+  body main .portada_cronograma {
+    background: none;
+    height: 300px;
+    justify-content: center;
+  }
+}
+/*body*/
+.contacto__body {
+  background-image: url(../assets/img/tres-riccios.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.contacto__body h1 {
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 620px) {
+  .contacto__body {
+    background-image: url(../assets/img/tres-riccios.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+  .contacto__body h1 {
+    text-align: center;
+    text-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff;
+  }
+}
+form {
+  margin: 25px auto;
+  width: 90%;
+  max-width: 500px;
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.4666666667);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8666666667);
+  font-family: "Arimo", sans-serif;
+}
+form input ::placeholder {
+  color: #5e5e5e;
+  font-style: italic;
+}
+form input.datoscontacto {
+  padding: 10px;
+  font-weight: 600;
+  margin: 1em;
+  display: block;
+  width: auto;
+}
+form div.form__div-checkbox {
+  margin: 1em;
+  padding: 1em;
+}
+form div.form__div-checkbox h2 {
+  margin-bottom: 1em;
+}
+form div.form__div-checkbox input {
+  margin: 0.5em;
+}
+form label.mensaje {
+  margin-left: 1em;
+  font-weight: 600;
+}
+form textarea {
+  padding: 10px;
+  font-weight: 600;
+  margin: 1em;
+  margin-top: 0;
+  display: block;
+  width: 95%;
+  height: 6em;
+}
+form input[type=submit] {
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #0054ba;
+  color: #fff;
+}
+
+.contacto_ul {
+  display: inline-block;
+  background-color: #fff0d9;
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 4px 4px 10px #000;
+  transition: box-shadow 1s;
+}
+.contacto_ul li {
+  list-style: none;
+  margin: 10px;
+}
+.contacto_ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contacto_ul:hover {
+  box-shadow: 4px 4px 10px #fff;
+}
+
 h1,
 h2,
 h3 {

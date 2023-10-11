@@ -1,17 +1,13 @@
-.actividades__header {
-    position: relative;
-}
 
 
 .second-nav {
-    position: sticky;
-    top: 0;
     background: linear-gradient(to right, $color-blanco 50%, $color-transparente);
     z-index: 10;
-    box-shadow: 0 2px 10px #000;
+    
 
     ul {
         list-style: none;
+       
         li {
             padding: 10px;
             margin-left: 50px;
@@ -21,7 +17,11 @@
                 text-decoration: none;
                 color: $color-texto;
                 font-weight: 600;
+                transition: text-decoration 1s;
               
+            }
+            a:hover {
+                text-decoration: underline;
             }
         }
     }
@@ -32,6 +32,7 @@
 
 .actividades__portada {
     @include portada;
+   
 }
 
 
@@ -119,6 +120,8 @@
             }
 
             .second-nav {
+                position: sticky;
+                top: 161.41px;
                 ul {
                     display: flex;
                 }

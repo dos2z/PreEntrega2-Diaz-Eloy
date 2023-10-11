@@ -3,7 +3,8 @@
 header {
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: $color-blanco;
+
 
     nav {
         div {
@@ -29,8 +30,8 @@ header {
                         }
         
                         a:hover {
-                            color: #000;
-                            text-shadow: 1px 1px 10px #212121;
+                            color: $color-negro;
+                            text-shadow: 1px 1px 10px $color-focus;
                         }
                     }
                 }
