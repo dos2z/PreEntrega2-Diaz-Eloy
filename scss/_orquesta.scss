@@ -1,23 +1,26 @@
+
+
 .orquesta__portada {
     @include portada;
 
-    p {
-        width: 75%;
-        margin-top: 16px;
-        padding: 10px;
-        font-size: 1.2rem;
-        font-weight: 600;
-        background-color: $color-intermedio ;
-        border-radius: 10px;
+    div.portada-texto {
+        p {
+            width: 75%;
+            margin-top: 16px;
+            padding: 10px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            background-color: $color-intermedio ;
+            border-radius: 10px;
+        }
     }
-
 }
 
 
 
 .text__section {
     width: 100%;
-    background: linear-gradient(to bottom, $color-principal, $color-intermedio 25%, #ffffff00); 
+    background: linear-gradient(to bottom, $color-principal, $color-intermedio 25%, #ffffff00);
     padding: 50px 20px;
     font-weight: 600;
     line-height: 1.5em;
@@ -29,12 +32,13 @@
         width: 95%;
         display: flex;
         justify-content: center;
+        overflow: hidden;
 
         img {
             width: 85%;
-            min-width: 500px;
+            min-width: 400px;
             box-shadow: 0 0 5px $color-negro;
-        } 
+        }
 
     }
 
@@ -68,29 +72,29 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: top;
-    }
 
-    .orquesta__portada {
-        background: linear-gradient(to right, #ffffffe2 30%, $color-transparente);
-        width: 100%;
-        margin: 0 auto;
-        padding: 5px;
-        font-weight: 600;
+        .orquesta__portada {
+            background: linear-gradient(to right, #ffffffe2 30%, $color-transparente);
+            width: 100%;
+            margin: 0 auto;
+            padding: 5px;
+            font-weight: 600;
 
-        div.portada-texto {
-            width: 70%;
-            min-width: 400px;
-            margin: 10px 10px 60px 70px;
-            padding-left: 20px;
-            text-align: left;
-            line-height: 2rem;
-            color: $color-texto;
+            div.portada-texto {
+                width: 70%;
+                min-width: 400px;
+                margin: 10px 10px 60px 70px;
+                padding-left: 20px;
+                text-align: left;
+                line-height: 2rem;
+                color: $color-texto;
 
-            p {
-                margin-top: 1em;
-                font-size: 1.3rem; 
+                p {
+                    margin-top: 1em;
+                    font-size: 1.3rem;
+                }
             }
-        } 
+        }
     }
 
 
@@ -106,4 +110,3 @@
         }
     }
 }
-
