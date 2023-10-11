@@ -5,12 +5,9 @@
 
     div.portada-texto {
         p {
-            width: 75%;
-            margin-top: 16px;
+            @include portada-p($font-size:1.2rem);
             padding: 10px;
-            font-size: 1.2rem;
-            font-weight: 600;
-            background-color: $color-intermedio ;
+            background-color: $color-intermedio;
             border-radius: 10px;
         }
     }
@@ -66,9 +63,8 @@
 
 @media screen and (min-width: 980px) {
 
-
     body {
-        background: linear-gradient(to right, #ffffff 30%, $color-transparente), url(../assets/img/tres-riccios.jpg);
+        background: linear-gradient(to right, $color-blanco 30%, $color-transparente), url(../assets/img/tres-riccios.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: top;
@@ -92,6 +88,7 @@
                 p {
                     margin-top: 1em;
                     font-size: 1.3rem;
+                    background: none;
                 }
             }
         }

@@ -9,7 +9,7 @@ header {
 header nav div a img {
   width: 200px;
 }
-header nav div button {
+header nav div button.navbar-toggler {
   border: none;
 }
 header nav div div ul li {
@@ -267,10 +267,10 @@ form input[type=submit] {
 }
 .orquesta__portada div.portada-texto p {
   width: 75%;
-  margin-top: 16px;
-  padding: 10px;
+  margin-top: 1em;
   font-size: 1.2rem;
   font-weight: 600;
+  padding: 10px;
   background-color: #faefe6;
   border-radius: 10px;
 }
@@ -316,7 +316,7 @@ form input[type=submit] {
 /*pantallas a partir de 980px */
 @media screen and (min-width: 980px) {
   body {
-    background: linear-gradient(to right, #ffffff 30%, rgba(255, 255, 255, 0)), url(../assets/img/tres-riccios.jpg);
+    background: linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0)), url(../assets/img/tres-riccios.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -340,6 +340,7 @@ form input[type=submit] {
   body .orquesta__portada div.portada-texto p {
     margin-top: 1em;
     font-size: 1.3rem;
+    background: none;
   }
   .text__section {
     margin: 0 auto;
@@ -350,6 +351,115 @@ form input[type=submit] {
   .text__section p {
     width: 70%;
     margin: 2em;
+  }
+}
+.actividades__header {
+  position: relative;
+}
+
+.second-nav {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #fff0d9 50%, rgba(255, 240, 217, 0.6196078431));
+  z-index: 10;
+  box-shadow: 0 2px 10px #000;
+}
+.second-nav ul li {
+  padding: 10px;
+  margin-left: 50px;
+}
+.second-nav ul li a {
+  text-decoration: none;
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+/*body*/
+.actividades__portada {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8862745098) 30%, rgba(255, 255, 255, 0)), url(../assets/img/tres-riccios.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 2rem;
+  text-shadow: 2px 4px 10px #fff, -2px -4px 10px #fff;
+}
+.actividades__portada h1 {
+  font-weight: 700;
+  margin: 100px 20px 50px;
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+.text__section {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(255, 240, 217, 0.9137254902), #faefe6 25%, rgba(255, 255, 255, 0));
+  padding: 50px 20px;
+  font-weight: 600;
+  line-height: 1.5em;
+  color: #1e1e1e;
+  font-size: 1rem;
+}
+.text__section h3 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.text__section p {
+  width: 70%;
+  margin: 2em;
+}
+.text__section p a {
+  font-style: italic;
+  color: #1e1e1e;
+}
+.text__section p a.focus {
+  color: #0054ba;
+}
+.text__section ul {
+  margin-bottom: 100px;
+}
+.text__section div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.text__section div p {
+  width: 50%;
+  min-width: 420px;
+}
+.text__section div .actividades__img {
+  width: 40%;
+  min-width: 270px;
+}
+.text__section div .actividades__img img {
+  width: 100%;
+}
+
+/*pantallas a partir de 980px */
+@media screen and (min-width: 980px) {
+  body {
+    background: linear-gradient(to right, #fff 30%, rgba(255, 255, 255, 0)), url(../assets/img/tres-riccios.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  body main .actividades__portada {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8862745098) 30%, rgba(255, 255, 255, 0));
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    font-weight: 600;
+  }
+  body main .second-nav ul {
+    display: flex;
+  }
+  body main .text__section {
+    margin: 0 auto;
+    margin: auto;
+    padding: 5em;
+    font-size: 1.2rem;
   }
 }
 h1,

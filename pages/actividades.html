@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
 
     <!--mis estilos-->
-    <link rel="stylesheet" href="../styles/actividades.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 
     <!--Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,10 +43,10 @@
 
 <body>
     <!-- Nav y header-->
-    <header class="px-4 border-bottom">
+    <header class="px-4 border-bottom actividades__header">
         <nav class="nav navbar navbar-expand-md">
             <div class="container-fluid">
-                <a class="logo navbar-brand" href="../index.html">
+                <a id="inicio" class="logo navbar-brand" href="../index.html">
                     <img src="../assets/img/logo-cofradia-removebg.png" alt="Logo Cofradia">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -85,72 +85,84 @@
     </header>
 
     <main>
-        <section>
-            <div class="portada">
-                <h1>Actividades</h1>
 
-            </div>
+        <div class="actividades__portada">
+            <h1>Actividades</h1>
 
-            <div class="second-nav">
-                <ul>
-                    <li><a href="#clases">Clases</a></li>
-                    <li><a href="#orquestas">Orquestas</a></li>
-                    <li><a href="#ejmc">Encuentro Juvenil de Música de cámara</a></li>
-                </ul>
-            </div>
+        </div>
 
-            <section id="clases" class="text__section">
-                <h2>Clases de instrumentos</h2>
-                <img src="s" alt="">
+        <div class="second-nav">
+            <ul>
+                <li><a href="#clases">Clases</a></li>
+                <li><a href="#orquestas">Orquestas</a></li>
+                <li><a href="#ejmc">Encuentro Juvenil de Música de cámara</a></li>
+                <li><a href="#inicio">Arriba</a></li>
+            </ul>
+        </div>
 
+        <section id="clases" class="text__section">
+            <h2>Clases de instrumentos</h2>
+            <img src="s" alt="">
+
+
+            <div>
                 <p>
                     Con un enfoque hacia la música clásica, se brindan clases personalizadas y adaptadas a las
                     necesidades y metas individuales de quienes deseen aprender a tocar el Violín, la Viola, el
                     Violoncello, el Contrabajo o el Piano
                 </p>
 
-                <p>
-                    Los alumnos tienen la posibilidad de participar de diferentes agrupaciones y contar con espacios
-                    donde presentar los avances obtenidos en vivo. Cada año se realizan dos muestras en las cuales los
-                    estudiantes tienen la oportunidad de vivir la experiencia de compartir frente a un público la música
-                    que han estado aprendiendo.
-                </p>
+                <div class="actividades__img">
+                    <img class="img-thumbnail" src="../assets/img/clase-grupal.jpg" alt="Orquesta de niños">
+                </div>
 
-                <p>
-                    Además, los estudiantes jóvenes más avanzados tienen la oportunidad de ser seleccionados para formar
-                    parte de la Orquesta de Cámara Juvenil Cofradía. Esta orquesta realiza múltiples presentaciones a lo
-                    largo del año y ha sido el punto de partida de músicos que ahora forman parte de prestigiosas
-                    orquestas tanto a nivel nacional como internacional
-                </p>
-
-                <p>
-                    Si querés más info o tomar clases de alguno de estos instrumentos podes escribirnos a
-                    <a class="italic" href="mailto:fundacion.cofradia@gmail.com">
-                        fundacion.cofradia@gmail.com
-                    </a>,
-                    llamar a
-                    <a class="italic" href="tel:+5492944607870">
-                        +54 9 294-460-7870
-                    </a>
-                    o llenar el formulario de contacto
-                    <a class="italic focus" href="./pages/contacto.html">
-                        acá
-                    </a>
+            </div>
 
 
-            </section>
+            <p>
+                Los alumnos tienen la posibilidad de participar de diferentes agrupaciones y contar con espacios
+                donde presentar los avances obtenidos en vivo. Cada año se realizan dos muestras en las cuales los
+                estudiantes tienen la oportunidad de vivir la experiencia de compartir frente a un público la música
+                que han estado aprendiendo.
+            </p>
 
-            <section id="orquestas" class="text__section">
-                <h2>Orquestas</h2>
-                <img src="s" alt="">
+            <p>
+                Además, los estudiantes jóvenes más avanzados tienen la oportunidad de ser seleccionados para formar
+                parte de la Orquesta de Cámara Juvenil Cofradía. Esta orquesta realiza múltiples presentaciones a lo
+                largo del año y ha sido el punto de partida de músicos que ahora forman parte de prestigiosas
+                orquestas tanto a nivel nacional como internacional
+            </p>
 
-                <h3>Orquesta de Cámara Juvenil Cofradía</h3>
+            <p>
+                Si querés más info o tomar clases de alguno de estos instrumentos podes escribirnos a
+                <a class="italic" href="mailto:fundacion.cofradia@gmail.com">
+                    fundacion.cofradia@gmail.com
+                </a>,
+                llamar a
+                <a class="italic" href="tel:+5492944607870">
+                    +54 9 294-460-7870
+                </a>
+                o llenar el formulario de contacto
+                <a class="italic focus" href="./pages/contacto.html">
+                    acá
+                </a>
 
-                <p>
-                    Enfocada en enseñar música y cultivar el talento de sus jóvenes miembros, esta formada por
-                    niños y adolescentes que estudian violín, viola, violoncello y contrabajo.
-                </p>
 
+        </section>
+
+        <section id="orquestas" class="text__section">
+            <h2>Orquestas</h2>
+            <img src="s" alt="">
+
+            <h3>Orquesta de Cámara Juvenil Cofradía</h3>
+
+            <p>
+                Enfocada en enseñar música y cultivar el talento de sus jóvenes miembros, esta formada por
+                niños y adolescentes que estudian violín, viola, violoncello y contrabajo.
+            </p>
+
+            <div>
+               
                 <p>
                     Su función específica es complementar la instrucción musical a partir de la actividad
                     grupal, especialmente la práctica orquestal, para un adecuado desarrollo técnico y
@@ -158,18 +170,34 @@
                     responabilidad y pertenencia.
                 </p>
 
-                <p>
-                    Por esto mismo también trabaja en conjunto y realiza presentaciones con otras organizaciones
-                    musicales de la zona y del resto del país como ser:</p>
-                <ul>
-                    <li>Coro de Niños y Jóvenes Cantores Bariloche</li>
-                    <li>Coro Juvenil municipal Bariloche</li>
-                    <li>Sinfónica Juvenil Nacional José de San Martín</li>
-                    <li>Orquesta Filarmónica Río Negro</li>
-                </ul>
+                <div class="actividades__img">
+                    <img class="img-thumbnail" src="../assets/img/orquesta-en-concierto.jpg" alt="Orquesta de niños">
+                </div>
+    
+            </div>
+
+            
+
+            <p>
+                Por esto mismo también trabaja en conjunto y realiza presentaciones con otras organizaciones
+                musicales de la zona y del resto del país como ser:</p>
+
+            <ul>
+                <li>Coro de Niños y Jóvenes Cantores Bariloche</li>
+                <li>Coro Juvenil municipal Bariloche</li>
+                <li>Sinfónica Juvenil Nacional José de San Martín</li>
+                <li>Orquesta Filarmónica Río Negro</li>
+            </ul>
 
 
-                <h3>TOI (Taller Orquestal de Iniciación)</h3>
+            <h3>TOI (Taller Orquestal de Iniciación)</h3>
+
+
+            <div>
+
+                <div class="actividades__img">
+                    <img class="img-thumbnail" src="../assets/img/orquesta-peques.jpg" alt="Orquesta de niños">
+                </div>
 
                 <p>
                     Dentro del Proyecto Cofradía, se presenta una actividad de iniciación, especialmente
@@ -177,17 +205,19 @@
                     música orquestal a través de instrumentos de cuerdas frotadas.
                 </p>
 
-                <p>
-                    La modalidad de trabajo incluye clases individuales de instrumento, una instrucción
-                    teórico-práctica en el lenguaje musical como complemento, y la práctica orquestal
-                    desde el comienzo del aprendizaje, adaptada para que los niños disfruten del
-                    proceso.
-                </p>
+            </div>
 
-                <div>
-                    <img src="../assets/img/instrumentos1-removebg-preview.png" alt="varios instrumentos de cuerdas">
-                </div>
-                
+
+
+            <p>
+                La modalidad de trabajo incluye clases individuales de instrumento, una instrucción
+                teórico-práctica en el lenguaje musical como complemento, y la práctica orquestal
+                desde el comienzo del aprendizaje, adaptada para que los niños disfruten del
+                proceso.
+            </p>
+
+
+            <div>
 
                 <p>
                     Para que los niños puedan comenzar su viaje musical, se dispone de una dotación
@@ -196,36 +226,45 @@
                     que cada estudiante vaya adquiriendo su propio instrumento.
                 </p>
 
-                <p>
-                    La metodología es la misma que tiene un gran éxito con los miembros de la Orquesta
-                    de Cámara Juvenil Cofradía desde su creación y está diseñada para que los niños
-                    disfruten al máximo de su experiencia musical."
-                </p>
+                <div class="actividades__img">
+                    <img class="img-thumbnail" src="../assets/img/instrumentos1-removebg-preview.png"
+                        alt="varios instrumentos de cuerdas">
+                </div>
 
-
-            </section>
-
-            <section id="ejmc" class="text__section">
-                <h2>Encuentro Juvenil de Música de Cámara</h2>
-                <img src="s" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nulla esse magni, earum
-                    temporibus deleniti sapiente corrupti quae officiis accusamus necessitatibus sed magnam saepe
-                    consectetur vitae? Minima, corporis quidem.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nulla esse magni, earum
-                    temporibus deleniti sapiente corrupti quae officiis accusamus necessitatibus sed magnam saepe
-                    consectetur vitae? Minima, corporis quidem.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nulla esse magni, earum
-                    temporibus deleniti sapiente corrupti quae officiis accusamus necessitatibus sed magnam saepe
-                    consectetur vitae? Minima, corporis quidem.</p>
-
-
-            </section>
-
-
-
-            <div>
-                <img src="s" alt="">
             </div>
+
+
+
+            <p>
+                La metodología es la misma que tiene un gran éxito con los miembros de la Orquesta
+                de Cámara Juvenil Cofradía desde su creación y está diseñada para que los niños
+                disfruten al máximo de su experiencia musical."
+            </p>
+
+
+        </section>
+
+        <section id="ejmc" class="text__section">
+            <h2>Encuentro Juvenil de Música de Cámara</h2>
+            <img src="s" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nulla esse magni, earum
+                temporibus deleniti sapiente corrupti quae officiis accusamus necessitatibus sed magnam saepe
+                consectetur vitae? Minima, corporis quidem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nulla esse magni, earum
+                temporibus deleniti sapiente corrupti quae officiis accusamus necessitatibus sed magnam saepe
+                consectetur vitae? Minima, corporis quidem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus nulla esse magni, earum
+                temporibus deleniti sapiente corrupti quae officiis accusamus necessitatibus sed magnam saepe
+                consectetur vitae? Minima, corporis quidem.</p>
+
+
+        </section>
+
+
+
+        <div>
+            <img src="s" alt="">
+        </div>
 
 
         </section>

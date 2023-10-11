@@ -1,0 +1,126 @@
+.actividades__header {
+    position: relative;
+}
+
+
+.second-nav {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, $color-principal 50%, #fff0d99e);
+    z-index: 10;
+    box-shadow: 0 2px 10px #000;
+
+    ul {
+        li {
+            padding: 10px;
+            margin-left: 50px;
+
+            a {
+                text-decoration: none;
+                color: $color-texto;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+/*body*/
+
+.actividades__portada {
+    @include portada;
+}
+
+
+
+.text__section {
+    width: 100%;
+    background: linear-gradient(to bottom, #fff0d9e9, #faefe6 25%, $color-transparente);
+    padding: 50px 20px;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: $color-texto;
+    font-size: 1rem;
+
+    h3{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    p {
+        width: 70%;
+        margin: 2em;
+        a {
+            font-style: italic;
+            color: $color-texto;
+        }
+        a.focus {
+            color: $color-focus;
+        }
+    
+    }
+
+    ul{
+        margin-bottom: 100px;
+    }
+        
+    div {
+        @include flex($justify-content: space-evenly);
+        width: 100%;
+
+        p {
+            width: 50%;
+            min-width: 420px;
+        }
+
+        .actividades__img {
+            width: 40%;
+            min-width: 270px;
+            img {
+                width: 100%;
+            }
+        }
+        
+    }        
+}
+
+.actividades__img {
+
+}
+
+/*pantallas a partir de 980px */
+
+@media screen and (min-width: 980px) {
+
+    body {
+        background: linear-gradient(to right, $color-blanco 30%, $color-transparente), url(../assets/img/tres-riccios.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+
+        main {
+            .actividades__portada {
+                background: linear-gradient(to right, #ffffffe2 30%, $color-transparente);
+                width: 100%;
+                margin: 0 auto;
+                padding: 5px;
+                font-weight: 600;
+            }
+
+            .second-nav {
+                ul {
+                    display: flex;
+                }
+            }
+
+            .text__section {
+                margin: 0 auto;
+                margin: auto;
+                padding: 5em;
+                font-size: 1.2rem;
+             
+                     
+            }
+        }
+    }
+}

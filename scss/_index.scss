@@ -11,10 +11,7 @@
 
     /*Solo el INDEX */
     p {
-        width: 75%;
-        margin-top: 1em;
-        font-size: 1.5rem;
-        font-weight: 600;
+       @include portada-p;
     }
 }
 
