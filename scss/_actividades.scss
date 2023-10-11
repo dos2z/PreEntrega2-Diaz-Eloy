@@ -6,19 +6,22 @@
 .second-nav {
     position: sticky;
     top: 0;
-    background: linear-gradient(to right, $color-principal 50%, #fff0d99e);
+    background: linear-gradient(to right, $color-blanco 50%, $color-transparente);
     z-index: 10;
     box-shadow: 0 2px 10px #000;
 
     ul {
+        list-style: none;
         li {
             padding: 10px;
             margin-left: 50px;
+            
 
             a {
                 text-decoration: none;
                 color: $color-texto;
                 font-weight: 600;
+              
             }
         }
     }
@@ -42,14 +45,20 @@
     color: $color-texto;
     font-size: 1rem;
 
-    h3{
-        text-align: center;
+    h2 {
         margin-bottom: 100px;
     }
 
+    h3{
+        text-align: center;
+        margin: 100px auto;
+    }
+
     p {
+        margin: 10px;
         width: 70%;
-        margin: 2em;
+        min-width: 250px;
+        
         a {
             font-style: italic;
             color: $color-texto;
@@ -61,16 +70,18 @@
     }
 
     ul{
+        margin-left: 50px;
         margin-bottom: 100px;
     }
+
         
     div {
         @include flex($justify-content: space-evenly);
         width: 100%;
-
+        margin-bottom: 50px;
         p {
             width: 50%;
-            min-width: 420px;
+            min-width: 250px;
         }
 
         .actividades__img {
