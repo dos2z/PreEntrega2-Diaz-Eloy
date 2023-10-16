@@ -180,7 +180,7 @@ header nav div div ul li a:hover {
   font-size: 1.2rem;
   font-weight: 600;
   padding: 10px;
-  background-color: #faefe6;
+  background-color: rgba(250, 239, 230, 0.4980392157);
   border-radius: 10px;
 }
 
@@ -320,6 +320,11 @@ header nav div div ul li a:hover {
   width: 70%;
   min-width: 250px;
 }
+@media screen and (max-width: 620px) {
+  .text__section p {
+    width: 50%;
+  }
+}
 .text__section p a {
   font-style: italic;
   color: #1e1e1e;
@@ -335,7 +340,7 @@ header nav div div ul li a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-bottom: 50px;
@@ -375,6 +380,7 @@ header nav div div ul li a:hover {
     display: flex;
   }
   body main .text__section {
+    display: block;
     margin: 0 auto;
     margin: auto;
     padding: 5em;
@@ -414,13 +420,13 @@ header nav div div ul li a:hover {
 }
 
 @media screen and (min-width: 980px) {
-  body {
+  .coronograma__body {
     background: linear-gradient(to right, #ffffff 30%, rgba(255, 255, 255, 0)), url(../assets/img/tres-riccios.jpg);
     background-size: contain;
     background-repeat: repeat;
     background-position: top;
   }
-  body main .portada_cronograma {
+  .coronograma__body main .portada_cronograma {
     background: none;
     height: 300px;
     justify-content: center;

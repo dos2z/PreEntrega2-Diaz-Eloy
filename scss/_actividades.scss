@@ -1,25 +1,24 @@
-
-
 .second-nav {
     background: linear-gradient(to right, $color-blanco 50%, $color-transparente);
     z-index: 10;
-    
+
 
     ul {
         list-style: none;
-       
+
         li {
             padding: 10px;
             margin-left: 50px;
-            
+
 
             a {
                 text-decoration: none;
                 color: $color-texto;
                 font-weight: 600;
                 transition: text-decoration 1s;
-              
+
             }
+
             a:hover {
                 text-decoration: underline;
             }
@@ -32,7 +31,7 @@
 
 .actividades__portada {
     @include portada;
-   
+
 }
 
 
@@ -46,11 +45,14 @@
     color: $color-texto;
     font-size: 1rem;
 
+
+
+
     h2 {
         margin-bottom: 100px;
     }
 
-    h3{
+    h3 {
         text-align: center;
         margin: 100px auto;
     }
@@ -59,27 +61,33 @@
         margin: 10px;
         width: 70%;
         min-width: 250px;
-        
+
+        @media screen and (max-width: 620px) {
+            width: 50%;
+        }
+
         a {
             font-style: italic;
             color: $color-texto;
         }
+
         a.focus {
             color: $color-focus;
         }
-    
+
     }
 
-    ul{
+    ul {
         margin-left: 50px;
         margin-bottom: 100px;
     }
 
-        
+
     div {
-        @include flex($justify-content: space-evenly);
+        @include flex($justify-content: space-between);
         width: 100%;
         margin-bottom: 50px;
+
         p {
             width: 50%;
             min-width: 250px;
@@ -88,17 +96,15 @@
         .actividades__img {
             width: 40%;
             min-width: 270px;
+
             img {
                 width: 100%;
             }
         }
-        
-    }        
+
+    }
 }
 
-.actividades__img {
-
-}
 
 /*pantallas a partir de 980px */
 
@@ -122,18 +128,20 @@
             .second-nav {
                 position: sticky;
                 top: 161.41px;
+
                 ul {
                     display: flex;
                 }
             }
 
             .text__section {
+                display: block;
                 margin: 0 auto;
                 margin: auto;
                 padding: 5em;
                 font-size: 1.2rem;
-             
-                     
+
+
             }
         }
     }
