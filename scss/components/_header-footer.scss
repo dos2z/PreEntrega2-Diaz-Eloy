@@ -5,39 +5,40 @@ header {
     top: 0;
     background-color: $color-blanco;
 
-
     nav {
         div {
             a {
                 img {
                     width: 200px;
                 }
-
             }
 
             button.navbar-toggler {
                 border: none;
             }
 
-
             div {
                 ul {
                     li {
                         margin-left: 5px;
-        
+
                         a.activo {
                             text-decoration: underline;
                         }
-        
+
+                        a.activo:hover {
+                            text-shadow: none;
+                        }
+
                         a:hover {
                             color: $color-negro;
                             text-shadow: 1px 1px 10px $color-focus;
                         }
+
                     }
                 }
             }
 
         }
     }
-
 }

@@ -72,8 +72,15 @@
         }
 
         a.focus {
+            text-decoration: none;
             color: $color-focus;
+            transition: text-shadow 1s;
         }
+
+        a.focus:hover {
+            text-shadow: 1px 1px 20px $color-focus;
+        }
+        
 
     }
 

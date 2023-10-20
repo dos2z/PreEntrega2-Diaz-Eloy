@@ -18,11 +18,34 @@ header nav div div ul li {
 header nav div div ul li a.activo {
   text-decoration: underline;
 }
+header nav div div ul li a.activo:hover {
+  text-shadow: none;
+}
 header nav div div ul li a:hover {
   color: #000;
   text-shadow: 1px 1px 10px #0054ba;
 }
 
+@keyframes temblor {
+  0% {
+    transform: rotate(-0.5deg);
+  }
+  25% {
+    transform: rotate(0.5deg);
+  }
+  50% {
+    transform: rotate(-0.5deg);
+  }
+  75% {
+    transform: rotate(0.5deg);
+  }
+  100% {
+    transform: rotate(-0.5deg);
+  }
+}
+/*Mixin secciones*/
+/*mixin para modelados*/
+/*mixin animaciones*/
 /* contenido */
 /* Movile */
 .index__portada {
@@ -67,9 +90,14 @@ header nav div div ul li a:hover {
   font-weight: 500;
 }
 .section__div div.descripcion div.descripcion-texto a.focus {
+  text-decoration: none;
   color: #0054ba;
+  transition: text-shadow 1s;
 }
-.section__div div.descripcion div.descripcion-img {
+.section__div div.descripcion div.descripcion-texto a.focus:hover {
+  text-shadow: 1px 1px 20px #0054ba;
+}
+.section__div div.descripcion div.descripcion-texto div.descripcion-img {
   margin: 20px;
 }
 
@@ -96,6 +124,12 @@ header nav div div ul li a:hover {
   text-decoration: none;
   color: #fff;
   font-size: 3em;
+}
+.abajo div:hover {
+  animation: temblor;
+  animation-duration: 0.5s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease;
 }
 
 /*Pantallas a partir de 576px*/
@@ -330,7 +364,12 @@ header nav div div ul li a:hover {
   color: #1e1e1e;
 }
 .text__section p a.focus {
+  text-decoration: none;
   color: #0054ba;
+  transition: text-shadow 1s;
+}
+.text__section p a.focus:hover {
+  text-shadow: 1px 1px 20px #0054ba;
 }
 .text__section ul {
   margin-left: 50px;

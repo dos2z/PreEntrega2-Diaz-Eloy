@@ -1,3 +1,5 @@
+/*Mixin secciones*/
+
 @mixin portada {
     background: linear-gradient(to right, #ffffffe2 30%, $color-transparente), url(../assets/img/tres-riccios.jpg);
     background-size: cover;
@@ -22,14 +24,27 @@
     font-weight: 600;
 }
 
+/*mixin para modelados*/
+
 @mixin flex ($flex-direction : row,
     $flex-wrap : wrap,
     $justify-content : center,
     $align-items: center) {
-
     display: flex;
     flex-direction: $flex-direction;
     flex-wrap: $flex-wrap;
     justify-content: $justify-content;
     align-items: $align-items;
+}
+
+/*mixin animaciones*/
+
+@mixin anim-temblor ($animation-duration: 0.5s,
+    $animation-iteration-count: 1,
+    $animation-timing-function: ease)
+     {
+    animation: temblor;
+    animation-duration: $animation-duration;
+    animation-iteration-count:  $animation-iteration-count;
+    animation-timing-function: $animation-timing-function;
 }
